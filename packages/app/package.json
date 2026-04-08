@@ -1,0 +1,22 @@
+{
+  "name": "vga-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "idb-keyval": "^6.2.1",
+    "lit": "^3.0.0",
+    "@vga/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^7.0.0",
+    "vite-plugin-pwa": "^1.2.0"
+  }
+}
