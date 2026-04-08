@@ -1,4 +1,7 @@
 {
   "name": "vga",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
