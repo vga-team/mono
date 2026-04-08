@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  max-height: 50vh;
+  max-width: calc(
+    100vw - var(--sidebar-width) - var(--leaflet-control-margin) * 3 - 1.5rem
+  );
+  overflow: hidden;
+}
+
+[part="header"] {
+  font-size: 1.2rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+[part="content"] {
+  background: var(--leaflet-control-inner-background);
+  border: var(--leaflet-control-border);
+  box-shadow: var(--leaflet-control-box-shadow);
+  max-width: 100%;
+  padding: var(--leaflet-control-padding);
+  overflow: hidden;
+}
+
+::slotted(*) {
+  display: block;
+}
+
+vga-ui-collapse::part(header) {
+  margin: 0 var(--leaflet-control-margin);
+}
+
+#show-in-large-view-button {
+  font-size: 1.2rem;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+#show-in-large-view-button:hover {
+  transform: scale(1.2);
+}
+
+#show-in-large-view-button:active {
+  transform: scale(0.9);
+}

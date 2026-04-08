@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="." />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VGA Core</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="./src/index.ts"></script>
+  </head>
+
+  <body>
+    <vga-core allow-modifying-page-info use-view-transitions></vga-core>
+    <script>
+      async function main() {
+        const vgaCore = document.querySelector("vga-core");
+        const config = await fetch("./src/assets/sample.json").then(
+          (response) => response.json()
+        );
+        vgaCore.config = config;
+      }
+      main();
+    </script>
+  </body>
+</html>
