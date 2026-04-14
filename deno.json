@@ -1,0 +1,3 @@
+{
+  "allowScripts": ["npm:docsify@4.13.1", "npm:esbuild@0.27.7"]
+}
