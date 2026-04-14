@@ -1,4 +1,4 @@
-# VGA (Visualization for Geospatial Analysis)
+# Home
 
 ## What is VGA?
 
